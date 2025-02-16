@@ -1,26 +1,20 @@
 "use strict"
 
-const title = 'Проект'
-let screens = 'Простые, Сложные, Интерактивные'
-const screenPrice = 500
-const rollback = 80
-let fullPrice = 5000
-const adaptive = false
+let num = 525
 
+num = String(num).split('')
+let sum = 1
+for(let i of num) {
+    sum *= i
 
-console.log(typeof title)
-console.log(screens.length)
-console.log(`“Стоимость
-верстки
-экранов ${screenPrice}
-рублей / долларов / гривен / юани” и Стоимость
-разработки
-сайта ${fullPrice}
-рублей / долларов / гривен / юани”`)
-screens.toLowerCase()
+}
 
-screens = screens.split( ' ')
-console.log(screens)
+console.log(sum)
 
-fullPrice = fullPrice * (rollback/100)
-console.log(fullPrice)
+sum = sum ** 3
+
+console.log(sum)
+
+sum = String(sum).slice(0, 2)
+
+console.log(sum)
